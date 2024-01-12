@@ -18,10 +18,14 @@ The data was prepared by using the `StandardScaler()` module to normalize the da
 In this section, the elbow method algorithm was used to find the best value for `k`. 
 
 <img width="1347" alt="k-orig-1" src="https://github.com/andreaira261/crypto-clustering-analysis/assets/48165713/13c86c73-39d2-46d5-b36e-5e8489cdffca">
+<br>
+<br>
 
 A line chart was plotted to visually identify the optimal value for `k`. 
 
 <img width="736" alt="k-orig-2" src="https://github.com/andreaira261/crypto-clustering-analysis/assets/48165713/023bd451-0b97-478b-9c00-75794d187cd2">
+<br>
+<br>
 
 It was determined that the best value to use for `k` was 3. 
 
@@ -29,6 +33,8 @@ It was determined that the best value to use for `k` was 3.
 In this section, the K-means model was initialized with 3 clusters. The model was fitted using the original data, and the clusters were predicted to group the cryptocurrencies.
 
 <img width="1376" alt="predict-orig-1" src="https://github.com/andreaira261/crypto-clustering-analysis/assets/48165713/8d0d3cd4-56e6-447f-82cb-a435ababe83b">
+<br>
+<br>
 
 A scatterplot was then created by setting `x="price_change_percentage_24h"` and `y="price_change_percentage_7d"`. The graph points are colored with labels based on the clusters found using K-means. The cryptocurrency name is displayed on hover to identify each data point. 
 
@@ -38,6 +44,8 @@ A scatterplot was then created by setting `x="price_change_percentage_24h"` and 
 An instance of a PCA model was created with `n_components=3`. The model was then used to reduce the features to three principal components.
 
 <img width="1373" alt="optimize-pca-1" src="https://github.com/andreaira261/crypto-clustering-analysis/assets/48165713/e4832a43-23bf-4208-8d00-69fc42bde5e5">
+<br>
+<br>
 
 A new DataFrame was created with the PCA data.
 
@@ -47,6 +55,7 @@ A new DataFrame was created with the PCA data.
 The elbow method algorigthm was repeated using the PCA data to find the best value for `k`. 
 
 <img width="726" alt="k-pca" src="https://github.com/andreaira261/crypto-clustering-analysis/assets/48165713/fc3f5f0b-f313-4d39-81f1-40345c8a810c">
+<br>
 
 It was determined that the best value to use for `k` was 3. 
 
